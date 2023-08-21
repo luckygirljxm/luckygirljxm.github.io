@@ -1,542 +1,431 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
+    <title>
+        
+        Keep Theme
+    </title>
+    
 <link rel="stylesheet" href="/css/style.css">
 
-  
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
 
-  
-  
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"}
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","first_screen":{"enable":false,"header_transparent":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"version":"3.7.3"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original article title","author":"Original article author","link":"Original article link"}
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container border-box">
+
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box is-home">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Keep Theme
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class="active"
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="active"
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
     </div>
-  </div>
+
+    <div class="window-mask"></div>
+
 </header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-开源第一步" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/20/%E5%BC%80%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5/" class="article-date">
-  <time class="dt-published" datetime="2023-08-20T05:40:15.285Z" itemprop="datePublished">2023-08-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>开源贡献指南：<br>1、<a target="_blank" rel="noopener" href="https://opensource.guide/zh-hans">https://opensource.guide/zh-hans</a> ：Github 官方的开源软件指南 。这份文档主要讲了如何启动一个开源项目、项目维护的最佳实践，怎么通过开源工作获得经济报酬等内容。多国语言版本，真挺不错的！<br>2、<a target="_blank" rel="noopener" href="https://github.com/eryajf/HowToStartOpenSource">GitHub - eryajf&#x2F;HowToStartOpenSource: ⚗️ GitHub开源项…</a>：个人总结，内容飞航实用，涵盖 Github 实用小技巧、Github Actions 实战等内容。在线阅读地址：<a target="_blank" rel="noopener" href="https://eryajf.github.io/HowToStartOpenSource/">HowToStartOpenSource</a> 。</p>
-<p>另开源项目的实际案例或者经验分享：<br>1、我参与 Seata 开源项目的一些感悟：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/wb7Dlq6H1wqwxCwW26d8RA">我参与 Seata 开源项目的一些感悟</a><br>2、我给 Apache 顶级项目提了个 Bug：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LYGc-02Acr4trl29R3e_yA">我给Apache顶级项目提了个Bug</a><br>3、我是如何成为Apache Kudu committer &amp; PMC的？：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dlh_kbhEWGw0DRK3j5GtNQ">我是如何成为Apache Kudu committer &amp; PMC的？</a><br>4、论如何从0开始参与一个开源项目：<a target="_blank" rel="noopener" href="https://juejin.cn/post/7152695026517016584">论如何从0开始参与一个开源项目 - 掘金</a><br>5、如何参与开源项目 - 细说 GitHub 上的 PR 全过程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/daniel-hutao/p/open-a-pr-in-github.html">如何参与开源项目 - 细说 GitHub 上的 PR 全过程 - 胡说云原生 - 博客园</a><br>最后，开源项目一般都会有一个贡献指南，好好阅读贡献指南对于自己参与项目非常有帮助。参考：Seata 项目的官方贡献指南（ <a target="_blank" rel="noopener" href="https://github.com/seata/seata/blob/develop/CONTRIBUTING.md">seata&#x2F;CONTRIBUTING.md at develop · seata&#x2F;seata · G…</a> ） 。</p>
-<p>跨出开源第一步：</p>
-<ul>
-<li>开源方面：<ul>
-<li>从日常开发需求入手，比如平常使用到的第三方库与中间件，去发现其中存在的问题以及可以改善的点，提出Issue</li>
-<li>在提出Issue的过程中，加深对该中间件的理解，尝试着去提出PR</li>
-<li>以日常需求为主做开源，而不是为了开源而开源</li>
-<li>一旦开始做开源，就坚持维护下去，即使只有自己在使用</li>
-<li>尽可能地提升自己在开源社区的影响力，帮助他人解决问题</li>
-</ul>
-</li>
-<li>学习方面：<ul>
-<li>深入理解框架的底层原理，而不是停留在用的阶段</li>
-<li>深入学习协议的底层</li>
-</ul>
-</li>
-</ul>
-<p>之前一直想要参与开源，但是一直找不到什么好的切入点，希望以后能逐渐学习开源。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/20/%E5%BC%80%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5/" data-id="cllj17zys0001t0vqfy5nc4u4" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+        </div>
 
+        <div class="page-main-content-middle border-box">
 
+            <div class="main-content border-box">
 
-  
-    <article id="post-MySQl学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/20/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2023-08-20T05:34:31.187Z" itemprop="datePublished">2023-08-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1-事务"><a href="#1-事务" class="headerlink" title="1. 事务"></a>1. 事务</h2><h3 id="1-1-事务介绍"><a href="#1-1-事务介绍" class="headerlink" title="1.1 事务介绍"></a>1.1 事务介绍</h3><p>事务是一组操作的集合，是一个不可分割的工作单位。</p>
-<p>事务会把所有操作作为一个整体一起向系统提交或撤销操作请求，这些操作要么同时成功，要么同时失败。</p>
-<ul>
-<li>注意：MySQL事务默认是自动提交的。每执行完一条语句，MySQL会隐式地提交</li>
-</ul>
-<h3 id="1-2-事务操作"><a href="#1-2-事务操作" class="headerlink" title="1.2 事务操作"></a>1.2 事务操作</h3><ol>
-<li><p>通过设置事务提交来控制事务</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> @<span class="variable">@autocommit</span>;</span><br><span class="line"><span class="keyword">set</span> @<span class="variable">@autocommit</span> <span class="operator">=</span> <span class="number">0</span>; # 取消事务手动提交</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开启事务</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">start</span> transaction</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>提交与回滚事务</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">commit</span>; # 提交</span><br><span class="line"><span class="keyword">rollback</span>; # 回滚</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="1-3-事务四大特性"><a href="#1-3-事务四大特性" class="headerlink" title="1.3 事务四大特性"></a>1.3 事务四大特性</h3><p>ACID</p>
-<ul>
-<li>原子性：事务是不可分割的最小操作单元，要么全部成功，要么全部失败。</li>
-<li>一致性：事务完成时，必须使所有数据都保持一致状态</li>
-<li>隔离性：数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行。</li>
-<li>持久性：事务一旦提交或回滚，它对数据库中的数据改变是永久的。</li>
-</ul>
-<h3 id="1-4-并发事务问题"><a href="#1-4-并发事务问题" class="headerlink" title="1.4 并发事务问题"></a>1.4 并发事务问题</h3><ul>
-<li>脏读：一个事务读到另外一个事务还未提交的数据</li>
-<li>不可重复读：一个事务先后读取同一条记录，但两次读取的数据不同。原因是另一个事务修改了其中的部分数据。</li>
-<li>幻读：一个事务按照条件查询数据时，没有对应的数据行，但是在插入数据时，又发现这行数据已经存在。原因是另一个事务在此过程中插入了此条数据。</li>
-</ul>
-<h3 id="1-5-事务隔离级别"><a href="#1-5-事务隔离级别" class="headerlink" title="1.5 事务隔离级别"></a>1.5 事务隔离级别</h3><p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111224048721.png" alt="image-20221111224048721"></p>
-<ul>
-<li><p>查看事务隔离级别</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select @@transaction_isolation</span><br><span class="line"></span><br><span class="line">SQL</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置事务隔离级别</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">set [GLOBAL|SESSION] transaction_isolation = &#x27;隔离级别&#x27;</span><br><span class="line">-- 隔离级别格式：READ-UNCOMMITTED ，READ-COMMITTED  ，REPEATABLE-READ  ，SERIALIZABLE</span><br><span class="line"></span><br><span class="line">SQL</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="2-存储引擎"><a href="#2-存储引擎" class="headerlink" title="2. 存储引擎"></a>2. 存储引擎</h2><h3 id="2-1-MySQL体系结构"><a href="#2-1-MySQL体系结构" class="headerlink" title="2.1 MySQL体系结构"></a>2.1 MySQL体系结构</h3><p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111224506954.png" alt="image-20221111224506954"></p>
-<ol>
-<li>连接层：完成诸如连接处理、授权认证等操作。在该层引入线程池概念，为通过认证安全接入的客户端提供线程</li>
-<li>服务层：完成绝大多数核心功能，如SQL接口，并完成缓存的查询、SQL的分析与优化、部分内置函数的执行。在该层，服务器会解析查询并创建相应的内部解析数，对其完成相应的优化：如表查询顺序、是否利用索引等。</li>
-<li>引擎层：真正负责MySQL中数据的存储和提取。</li>
-<li>存储层：将数据（redolog、undolog、数据、索引、二进制日志、错误日志、查询日志、慢查询日志等）存储在文件系统之上</li>
-</ol>
-<h3 id="2-2-存储引擎介绍"><a href="#2-2-存储引擎介绍" class="headerlink" title="2.2 存储引擎介绍"></a>2.2 存储引擎介绍</h3><p>存储引擎是MySQL数据库的核心</p>
-<ul>
-<li>存储引擎是存储数据、建立索引、更新查询数据等技术的实现方式</li>
-<li>存储引擎是基于表的，而不是基于库的。在创建表时，可以为表指定存储引擎</li>
-</ul>
-<h4 id="2-2-1-InnoDB"><a href="#2-2-1-InnoDB" class="headerlink" title="2.2.1 InnoDB"></a>2.2.1 InnoDB</h4><p>InnoDB是一种兼顾高可靠性与高性能的通用存储引擎，在MySQL5.5之后为默认存储引擎</p>
-<p>特点：</p>
-<ol>
-<li>DML操作遵循ACID模型，支持事务</li>
-<li>行级锁，提高并发访问性能</li>
-<li>支持外键FOREIGN KEY约束，保证数据完整性与正确性</li>
-</ol>
-<p>文件：xxx.ibd。xxx为表名，该引擎下每张表都会对应一个表空间文件：存储该表的表结构、数据与索引</p>
-<p>逻辑存储结构</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111225328390.png" alt="image-20221111225328390"></p>
-<ul>
-<li>表空间：InnoDB存储引擎逻辑结构的最高层，ibd文件其实就是其表空间文件，其中包含多个Segment段</li>
-<li>段：表空间是由各个段组成的：数据段、索引段、回滚段等。一个段中包含多个区</li>
-<li>区：区是表空间的单元结构，每个区大小为1M。默认情况下，页大小为16K，即一个区中一共有64个连续的页</li>
-<li>页：页是组成区的最小单元，页也是InnoDB存储引擎磁盘管理的最小单元，每个页大小默认为16KB</li>
-<li>行：InnoDB存储引擎是面向行的，数据是按行存放</li>
-</ul>
-<h3 id="2-3-存储引擎对比"><a href="#2-3-存储引擎对比" class="headerlink" title="2.3 存储引擎对比"></a>2.3 存储引擎对比</h3><p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111225819681.png" alt="image-20221111225819681"></p>
-<p>InnoDB与MyISAM区别：</p>
-<ul>
-<li>InnoDB支持事务；而MyISAM不支持</li>
-<li>InnoDB支持行锁与表锁；而MyISAM只支持表锁，不支持行锁</li>
-<li>InnoDB支持外键；而MyISAM不支持</li>
-</ul>
-<h2 id="3-索引"><a href="#3-索引" class="headerlink" title="3. 索引"></a>3. 索引</h2><h3 id="3-1-索引概述"><a href="#3-1-索引概述" class="headerlink" title="3.1 索引概述"></a>3.1 索引概述</h3><p>索引是一种帮助MySQL高效获取数据的数据结构。除数据库本身存储的数据，数据库系统还维护者满足特定查找算法的数据结构，这些数据结构通过某种方式引用指向数据，从而实现高级查找算法。</p>
-<p>优点：</p>
-<ol>
-<li>提高数据检索的效率，降低数据库IO成本</li>
-<li>通过索引对数据进行排序，降低数据排序成本，降低CPU消耗</li>
-</ol>
-<p>缺点：</p>
-<ol>
-<li>索引也需要占据空间（不过磁盘不值钱）</li>
-<li>索引大大提升了查询效率，但同时也降低了更新表的速度</li>
-</ol>
-<h3 id="3-2-索引结构"><a href="#3-2-索引结构" class="headerlink" title="3.2 索引结构"></a>3.2 索引结构</h3><h4 id="3-2-1-二叉搜索树"><a href="#3-2-1-二叉搜索树" class="headerlink" title="3.2.1 二叉搜索树"></a>3.2.1 二叉搜索树</h4><p>二叉搜索树虽然能提升查询效率，但是存在极端情况：顺序插入时会形成链表</p>
-<p>此外：大数据量的情况下，二叉树的层级较深，检索速度慢</p>
-<p>若采用红黑树，虽然解决了极端情况出现的链表问题，但仍然存在第二点问题。</p>
-<h4 id="3-2-2-B-Tree"><a href="#3-2-2-B-Tree" class="headerlink" title="3.2.2 B-Tree"></a>3.2.2 B-Tree</h4><p>B树是一种多路平衡查找树，相比于二叉树，B树每个节点可以有多个分支。</p>
-<p>以一颗最大度数为5的B-Tree为例，每个节点最多可以存储4个key，5个指针</p>
-<p><a target="_blank" rel="noopener" href="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111230857511.png"><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111230857511.png" alt="image-20221111230857511"></a></p>
-<p>image-20221111230857511</p>
-<h4 id="3-2-3-B-Tree"><a href="#3-2-3-B-Tree" class="headerlink" title="3.2.3 B+Tree"></a>3.2.3 B+Tree</h4><p>B+Tree是B-Tree的变体。其只有叶子节点存放具体的数据。</p>
-<p><a target="_blank" rel="noopener" href="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111231037171.png"><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111231037171.png" alt="image-20221111231037171"></a></p>
-<p>image-20221111231037171</p>
-<p>B+Tree与B-Tree的对比：</p>
-<ol>
-<li>B 树的所有节点既存放键(key) 也存放 数据(data)，而 B+树只有叶子节点存放 key 和 data，其他内节点只存放 key。</li>
-<li>B 树的叶子节点都是独立的;B+树的叶子节点有一条引用链指向与它相邻的叶子节点。</li>
-<li>B 树的检索的过程相当于对范围内的每个节点的关键字做二分查找，可能还没有到达叶子节点，检索就结束了。而 B+树的检索效率就很稳定了，任何查找都是从根节点到叶子节点的过程，叶子节点的顺序检索很明显。</li>
-</ol>
-<h4 id="3-2-4-Hash"><a href="#3-2-4-Hash" class="headerlink" title="3.2.4 Hash"></a>3.2.4 Hash</h4><p>MySQL中除了支持B+Tree索引，还支持Hash索引</p>
-<p>哈希表是键值对的集合，通过键(key)即可快速取出对应的值(value)，因此哈希表可以快速检索数据（接近 O(1)）。</p>
-<p>但是哈希算法有个 <strong>Hash 冲突</strong> 问题，也就是说多个不同的 key 最后得到的 index 相同。通常情况下，我们常用的解决办法是 <strong>链地址法</strong>。链地址法就是将哈希冲突数据存放在链表中。就比如 JDK1.8 之前 <code>HashMap</code> 就是通过链地址法来解决哈希冲突的。不过，JDK1.8 以后<code>HashMap</code>为了减少链表过长的时候搜索时间过长引入了红黑树。</p>
-<p>优点：Hash索引对于单条数据查询效率很高</p>
-<p>缺点：Hash索引只能用于对等比较，不支持范围查询；无法利用索引完成排序操作</p>
-<h3 id="3-3-索引分类"><a href="#3-3-索引分类" class="headerlink" title="3.3 索引分类"></a>3.3 索引分类</h3><p>在MySQL数据库中，索引主要分为：主键索引、唯一索引、常规索引、全文索引</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111232503785.png" alt="image-20221111232503785"></p>
-<p>根据索引的存储形式，又可分为：聚集索引、二级索引</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111232559549.png" alt="image-20221111232559549"></p>
-<p>聚集索引选取规则：</p>
-<ol>
-<li>如果存在主键，则主键索引就是聚集索引</li>
-<li>如果不存在主键，则使用第一个唯一索引作为聚集索引</li>
-<li>如果表没有主键或没有唯一索引，则InnoDB会自动生成一个rowid作为隐藏的聚集索引</li>
-</ol>
-<ul>
-<li>聚集索引的叶子节点下存放的为这一行的数据</li>
-<li>二级索引的叶子节点下存放的为该字段对应的主键值</li>
-</ul>
-<p>执行 <code>select * from user when name = &#39;Arm&#39;</code>，其中name为索引</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111232932026.png" alt="image-20221111232932026"></p>
-<p>具体过程为：</p>
-<ol>
-<li>由于是根据name字段进行查询，所以先根据name&#x3D;’Arm’到name字段的二级索引中进行匹配查找。但是在二级索引中只能查找到 Arm 对应的主键值 10。</li>
-<li>由于查询返回的数据是*，所以此时，还需要根据主键值10，到聚集索引中查找10对应的记录，最终找到10对应的行row。</li>
-<li>最终拿到这一行的数据，直接返回即可。</li>
-</ol>
-<p>回表查询：先到二级索引中查找数据，找到主键值之后，再到聚集索引中根据主键值获取数据。</p>
-<h3 id="3-4-索引语法"><a href="#3-4-索引语法" class="headerlink" title="3.4 索引语法"></a>3.4 索引语法</h3><ol>
-<li><p>创建索引</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [ <span class="keyword">UNIQUE</span> <span class="operator">|</span> FULLTEXT ] INDEX index_name <span class="keyword">ON</span> table_name ( index_col_name,... );</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看索引</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> INDEX <span class="keyword">FROM</span> table_name;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除索引</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> INDEX index_name <span class="keyword">ON</span> table_name;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="3-5-SQL性能分析"><a href="#3-5-SQL性能分析" class="headerlink" title="3.5 SQL性能分析"></a>3.5 SQL性能分析</h3><h4 id="3-5-1-SQL执行频率"><a href="#3-5-1-SQL执行频率" class="headerlink" title="3.5.1 SQL执行频率"></a>3.5.1 SQL执行频率</h4><p>通过如下命令，可以查看当前数据库的 INSERT、UPDATE、DELETE、SELECT的访问频次：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- show [session|global] status</span></span><br><span class="line"><span class="comment">-- session 是查看当前会话 </span></span><br><span class="line"><span class="comment">-- global 是查询全局数据 </span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GLOBAL</span> STATUS <span class="keyword">LIKE</span> <span class="string">&#x27;Com_______&#x27;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                
 
-<p>通过上述指令，我们可以查看到当前数据库到底是以查询为主，还是以增删改为主，从而为数据库优化提供参考依据。</p>
-<ul>
-<li>如果是以增删改为主，我们可以考虑不对其进行索引的优化。</li>
-<li>如果是以查询为主，那么就要考虑对数据库的索引进行优化了。</li>
-</ul>
-<h4 id="3-5-2-慢查询日志"><a href="#3-5-2-慢查询日志" class="headerlink" title="3.5.2 慢查询日志"></a>3.5.2 慢查询日志</h4><p>慢查询日志记录了所有执行时间超过指定参数（long_query_time，单位：秒，默认10秒）的所有SQL语句的日志。</p>
-<p>MySQL的慢查询日志默认没有开启，查看系统变量 slow_query_log。</p>
-<p>如果要开启慢查询日志，需要在MySQL的配置文件（&#x2F;etc&#x2F;my.cnf）中配置如下信息：</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启MySQL慢日志查询开关 </span></span><br><span class="line"><span class="attr">slow_query_log</span>=<span class="number">1</span> </span><br><span class="line"><span class="comment"># 设置慢日志的时间为2秒，SQL语句执行时间超过2秒，就会视为慢查询，记录慢查询日志 </span></span><br><span class="line"><span class="attr">long_query_time</span>=<span class="number">2</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-5-3-profile详情"><a href="#3-5-3-profile详情" class="headerlink" title="3.5.3 profile详情"></a>3.5.3 profile详情</h4><p>通过 <code>show profiles</code> 能够查询出每一条命令的执行时间</p>
-<p>通过set语句在session&#x2F;global级别开启profiling：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> profiling <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>执行完一系列业务SQL操作后，通过如下命令查询执行耗时</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 查看每一条SQL的耗时基本情况 </span></span><br><span class="line"><span class="keyword">show</span> profiles; </span><br><span class="line"><span class="comment">-- 查看指定query_id的SQL语句各个阶段的耗时情况 </span></span><br><span class="line"><span class="keyword">show</span> profile <span class="keyword">for</span> query query_id; </span><br><span class="line"><span class="comment">-- 查看指定query_id的SQL语句CPU的使用情况 </span></span><br><span class="line"><span class="keyword">show</span> profile cpu <span class="keyword">for</span> query query_id;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-5-4-explain"><a href="#3-5-4-explain" class="headerlink" title="3.5.4 explain"></a>3.5.4 explain</h4><p>EXPLAIN 或者 DESC命令获取 MySQL 如何执行 SELECT 语句的信息，包括在 SELECT 语句执行过程中表如何连接和连接的顺序。</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 直接在select语句之前加上关键字 </span></span><br><span class="line">explain <span class="operator">/</span> <span class="keyword">desc</span> EXPLAIN <span class="keyword">SELECT</span> 字段列表 <span class="keyword">FROM</span> 表名 <span class="keyword">WHERE</span> 条件 ;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>Explain 执行计划中各个字段的含义:</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221111234650646.png" alt="image-20221111234650646"></p>
-<h3 id="3-6-索引使用规则"><a href="#3-6-索引使用规则" class="headerlink" title="3.6 索引使用规则"></a>3.6 索引使用规则</h3><h2 id="4-SQL优化"><a href="#4-SQL优化" class="headerlink" title="4. SQL优化"></a>4. SQL优化</h2><h3 id="4-1-插入数据"><a href="#4-1-插入数据" class="headerlink" title="4.1 插入数据"></a>4.1 插入数据</h3><ul>
-<li><p>insert优化</p>
-<ul>
-<li>执行批量插入：500 ~ 1000条</li>
-<li>手动开启与提交事务</li>
-<li>主键顺序插入</li>
-</ul>
-</li>
-<li><p>大批量插入数据</p>
-<ul>
-<li>如果一次性需要插入大批量数据，使用insert语句插入性能较低，此时需要MySQL提供的load指令</li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221112163647221.png"><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221112163647221.png" alt="image-20221112163647221"></a></p>
-<p>使用如下指令，将数据脚本文件中的数据加载到表结构中</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 客户端连接服务端时，加上参数 -–local-infile </span></span><br><span class="line">mysql –<span class="operator">-</span><span class="keyword">local</span><span class="operator">-</span>infile <span class="operator">-</span>u root <span class="operator">-</span>p </span><br><span class="line"><span class="comment">-- 设置全局参数local_infile为1，开启从本地加载文件导入数据的开关 </span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> local_infile <span class="operator">=</span> <span class="number">1</span>; </span><br><span class="line"><span class="comment">-- 执行load指令将准备好的数据，加载到表结构中 </span></span><br><span class="line">load data <span class="keyword">local</span> infile <span class="string">&#x27;/root/sql1.log&#x27;</span> <span class="keyword">into</span> <span class="keyword">table</span> tb_user fields </span><br><span class="line">terminated <span class="keyword">by</span> <span class="string">&#x27;,&#x27;</span> lines terminated <span class="keyword">by</span> <span class="string">&#x27;\n&#x27;</span> ;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>开启local_infile之后，在任意一个数据库中创建一张表</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `tb_user` ( </span><br><span class="line">    `id` <span class="type">INT</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> AUTO_INCREMENT, </span><br><span class="line">    `username` <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>, </span><br><span class="line">    `password` <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>, </span><br><span class="line">    `name` <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>, `birthday` <span class="type">DATE</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>, </span><br><span class="line">    `sex` <span class="type">CHAR</span>(<span class="number">1</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>, </span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (`id`), </span><br><span class="line">    <span class="keyword">UNIQUE</span> KEY `unique_user_username` (`username`) </span><br><span class="line">) ENGINE<span class="operator">=</span>INNODB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 ;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>然后在数据库上加载对应的文件</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">load</span> data <span class="keyword">local</span> infile <span class="string">&#x27;/Users/xxx/Documents/load_user_100w_sort.sql&#x27;</span> <span class="keyword">into</span> <span class="keyword">table</span> tb_user fields terminated <span class="keyword">by</span> <span class="string">&#x27;,&#x27;</span> lines terminated <span class="keyword">by</span> <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221112164957718.png"><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221112164957718.png" alt="image-20221112164957718"></a></p>
-<p>从中可见性能提升了很多</p>
-</li>
-</ul>
-<h3 id="4-2-主键优化"><a href="#4-2-主键优化" class="headerlink" title="4.2 主键优化"></a>4.2 主键优化</h3><p>在InnoDB存储引擎中，表数据都是根据主键顺序组织存放的，这种存储方式的表称为索引组织表</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221112165939874.png" alt="image-20221112165939874"></p>
-<p>在InnoDB引擎中，数据行是记录在逻辑结构 page 页中的，而每一个页的大小是固定的，默认16K。那也就意味着， 一个页中所存储的行也是有限的，如果插入的数据行row在该页存储不小，将会存储到下一个页中，页与页之间会通过指针连接。</p>
-<ul>
-<li><p>页分裂</p>
-<p>页可以为空，也可以填充一半，也可以填充100%。每个页包含了2-N行数据(如果一行数据过大，会行溢出)，根据主键排列。</p>
-<ul>
-<li>主键顺序插入时，当前页满了之后，会插入到下一页。页与页之间用指针相连。</li>
-<li>主键乱序插入时，当插入的主键id在中间且当前页已经写满时，会将当前页的后一半数据移动到新的一页，然后再插入该主键id，此时需要重新设置页与页之间的链表指针 &#x3D;&gt; 页分裂</li>
-</ul>
-</li>
-<li><p>页合并</p>
-<ul>
-<li>当删除一行记录时，实际上记录并没有被物理删除，只是记录被标记（flaged）为删除并且它的空间变得允许被其他记录声明使用。</li>
-<li>当页中删除的记录达到 MERGE_THRESHOLD（默认为页的50%），InnoDB会开始寻找最靠近的页（前或后）看看是否可以将两个页合并以优化空间使用。</li>
-</ul>
-</li>
-</ul>
-<p>索引设计原则：</p>
-<ol>
-<li>满足业务需求的情况下，尽量降低主键的长度。</li>
-<li>插入数据时，尽量选择顺序插入，选择使用AUTO_INCREMENT自增主键。</li>
-<li>尽量不要使用UUID做主键或者是其他自然主键，如身份证号。</li>
-<li>业务操作时，避免对主键的修改。</li>
-</ol>
-<h3 id="4-3-order-by优化"><a href="#4-3-order-by优化" class="headerlink" title="4.3 order by优化"></a>4.3 order by优化</h3><p>MySQL的排序，有两种方式：</p>
-<ul>
-<li>Using filesort : 通过表的索引或全表扫描，读取满足条件的数据行，然后在排序缓冲区sortbuffer中完成排序操作，所有不是通过索引直接返回排序结果的排序都叫 FileSort 排序。</li>
-<li>Using index : 通过有序索引顺序扫描直接返回有序数据，这种情况即为 using index，不需要额外排序，操作效率高。</li>
-</ul>
-<p>在优化排序操作时，尽量采用Using Index</p>
-<p>order by优化原则</p>
-<ol>
-<li>根据排序字段建立合适的索引，多字段排序时，也遵循最左前缀法则</li>
-<li>尽量使用覆盖索引</li>
-<li>多字段排序, 一个升序一个降序，此时需要注意联合索引在创建时的规则（ASC&#x2F;DESC）</li>
-<li>如果不可避免的出现filesort，大数据量排序时，可以适当增大排序缓冲区大小sort_buffer_size，默认256K</li>
-</ol>
-<h3 id="4-4-group-by优化"><a href="#4-4-group-by优化" class="headerlink" title="4.4 group by优化"></a>4.4 group by优化</h3><p>在分组操作中，我们需要通过以下两点进行优化，以提升性能：</p>
-<ol>
-<li>在分组操作时，可以通过索引来提高效率。</li>
-<li>分组操作时，索引的使用也是满足最左前缀法则的。</li>
-</ol>
-<h3 id="4-5-limit优化"><a href="#4-5-limit优化" class="headerlink" title="4.5 limit优化"></a>4.5 limit优化</h3><p>优化思路: 一般分页查询时，通过创建 覆盖索引 能够比较好地提高性能，可以通过覆盖索引加子查询形式进行优化。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">explain select * from tb_sku t , (select id from tb_sku order by id limit 2000000,10) a where t.id = a.id;</span><br><span class="line"></span><br><span class="line">SQL</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-6-count优化"><a href="#4-6-count优化" class="headerlink" title="4.6 count优化"></a>4.6 count优化</h3><p>当表的数据量很大时，对表执行count操作是非常耗时的</p>
-<ul>
-<li>MyISAM 引擎把一个表的总行数存在了磁盘上，因此执行 count(*) 的时候会直接返回这个数，效率很高； 但是如果是带条件的count，MyISAM也慢。</li>
-<li>InnoDB执行 count(*) 的时候，需要把数据一行一行地从引擎里面读出来，然后累积计数。</li>
-<li>如果想大幅度提升InnoDB表的count效率，可以借助Redis手动统计计数</li>
-</ul>
-<p>count用法：count(字段) &lt; count(主键 id) &lt; count(1) ≈ count(*)</p>
-<p><img src="https://lty-image-bed.oss-cn-shenzhen.aliyuncs.com/blog/image-20221112200822172.png" alt="image-20221112200822172"></p>
-<h3 id="4-7-update优化"><a href="#4-7-update优化" class="headerlink" title="4.7 update优化"></a>4.7 update优化</h3><p>在采用update语句进行更新数据操作时，最好将索引作为查询数据的条件。这是因为InnoDB的行锁是针对索引加锁，而不是针对记录加锁。如果索引失效，则行锁会自动升级为表锁。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/20/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="cllj17zym0000t0vq5fdohgix" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-自己如何实现一个RPC" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/20/%E8%87%AA%E5%B7%B1%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARPC/" class="article-date">
-  <time class="dt-published" datetime="2023-08-20T04:50:57.098Z" itemprop="datePublished">2023-08-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一个合格的RPC框架需要有服务端，消费端，注册中心，负载均衡等服务端Server先向注册中心注册服务，客户端就可以从注册中心获得服务相关地址，然后通过请求到网络服务端。</p>
-<h2 id="注册中心"><a href="#注册中心" class="headerlink" title="注册中心"></a>注册中心</h2><p>注册中心就是一个用来储存服务的地址和ip的。可以注册和查找，相当于一个目录。只要是有存储功能的都可以用来当作服务中心。</p>
-<p>但是我们这里使用的是zookeeper。因为zookeeper提供了高可用，高性能的分布式数据一致性解决方案。通常zookeeper被用来当作消息发布接收，集群管理等，而且，zookeeper的数据是存储在内存里面的，性能非常好。</p>
-<h2 id="网络传输"><a href="#网络传输" class="headerlink" title="网络传输"></a>网络传输</h2><p>如果要调用远程的方法就需要发送网络请求，来传递目标类以及各种参数等。</p>
-<p>使用Netty来进行网络传输，相比于传统的socket（阻塞IO并且性能低），基于非阻塞NIO模型，并且简化了TCP,UDP的嵌套服务器编程并且性能方面也很好</p>
-<h2 id="序列化和反序列化"><a href="#序列化和反序列化" class="headerlink" title="序列化和反序列化"></a>序列化和反序列化</h2><p>为什么需要序列化和反序列化？</p>
-<p>因为网络传输是需要二进制，java对象是不能够进行网络传输的，必须将java对象转换为二进制（序列化）。而我们最后需要的只是java对象，所以还需要将将二进制转换为java对象（反序列化）。</p>
-<h2 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h2><p>为什么需要动态代理？</p>
-<p>为了让RPC调用远程方法像调用本地方法一样简单，不用关注调用远程方法的细节，如网络传输。</p>
-<p>如何屏蔽调用远程方法的底层细节？</p>
-<p>使用动态代理。</p>
-<p>相关文章<a target="_blank" rel="noopener" href="https://javaguide.cn/java/basis/proxy.html">https://javaguide.cn/java/basis/proxy.html</a></p>
-<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>举个例子：我们的系统某个服务访问量特别大，我们将这个服务部署在多态服务器上，当客户端发起请求的时候，多态服务器都可以处理这个请求。那么，如何正确选择处理该请求的服务器就很关键。iaru你要一台服务器来处理该服务响应同一请求，那该服务部署在多态服务器的意义就不复存在了。负载均衡就是为了避免单个服务器响应同一请求，容易造成服务器宕机、崩溃等问题，我们从负载均衡者四个字就能明显感受到它的意义。</p>
-<h2 id="传输协议"><a href="#传输协议" class="headerlink" title="传输协议"></a>传输协议</h2><p>我峨嵋你还需要设计一个私有的RPC协议，这个协议是客户端（服务消费方）和服务端（服务提供仿）交流的基础。</p>
-<p>简单来说：<strong>通过设计协议，我们定义需要传输哪些类型的数据，并且还会规定每一种类型的数据应该占多少字节。这样我们在接收到二进制数据之后，就可以正确的解析出我们需要的数据。</strong></p>
-<p>通常一些标准的RPC协议包含下面这些内容：</p>
-<ul>
-<li><strong>魔数</strong>：通常4个字节。这个魔数主要是为了筛选来到服务器的数据包，有了这个魔数之后，服务端首先取出前面四个字节进行比对，能够在第一时间识别出这个数据包并非是遵循自定义协议的，也就是无效数据包，为了安全考虑可以直接关闭连接以节省资源。</li>
-<li><strong>序列化编号</strong>：标识序列化的方式，比如是使用Java自带的序列化，还是json,kryo等序列化方式。</li>
-<li><strong>消息体长度</strong>：运行时计算出来</li>
-<li>…….</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
-<li><strong>注册中心</strong>：注册中心负责服务地址的注册与查找，相当于目录服务。</li>
-<li><strong>网络传输</strong>：既然我们要调用远程的方法，纪要发送网络请求来传递目标类和方法的信息以及方法的参数数据到服务提供端。</li>
-<li><strong>序列化和发序列话</strong>：要在网络传输数据就要涉及到<strong>序列化</strong>。</li>
-<li><strong>动态代理</strong>：屏蔽远程方法调用底层细节。</li>
-<li><strong>负载均衡</strong>：避免单个服务器响应同一个请求，容易造成服务器宕机，崩溃等问题。</li>
-<li><strong>传输协议</strong>：这个协议是客户端（服务消费方）和服务端（服务提供方）交流的基础。</li>
-</ol>
-<p>更完善的RPC框架可能华友监控模块（Dubbo的监控模块设计）。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/20/%E8%87%AA%E5%B7%B1%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARPC/" data-id="cllj17zyw0002t0vq0h1wa0cl" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list border-box">
         
-          <aside id="sidebar">
-  
-    
+            <li class="home-article-item">
 
-  
-    
+                
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2023/08/20/%E5%BC%80%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5/">
+                            
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            开源贡献指南：1、https://opensource.guide/zh-hans ：Github 官方的开源软件指南 。这份文档主要讲了如何启动一个开源项目、项目维护的最佳实践，怎么通过开源工作获得经济报酬等内容。多国语言版本，真挺不错的！2、Gi...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Aug 20 2023 13:48:38 GMT+0800">2023-08-20</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/08/20/%E5%BC%80%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/20/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/20/%E8%87%AA%E5%B7%B1%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARPC/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+        <a class="home-read-more" href="/2023/08/20/%E5%BC%80%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
 
-  
-</aside>
+                </div>
+            </li>
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2023/08/20/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                            
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            1. 事务1.1 事务介绍事务是一组操作的集合，是一个不可分割的工作单位。
+事务会把所有操作作为一个整体一起向系统提交或撤销操作请求，这些操作要么同时成功，要么同时失败。
+
+注意：MySQL事务默认是自动提交的。每执行完一条语句，MySQL会隐式地提...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Aug 20 2023 13:37:55 GMT+0800">2023-08-20</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
     </div>
-  </div>
+
+    
+        <a class="home-read-more" href="/2023/08/20/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <div class="home-article-item-bottom border-box">
+                    
+                    <h3 class="home-article-title border-box">
+                        <a href="/2023/08/20/%E8%87%AA%E5%B7%B1%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARPC/">
+                            
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content keep-markdown-body">
+                        
+                            一个合格的RPC框架需要有服务端，消费端，注册中心，负载均衡等服务端Server先向注册中心注册服务，客户端就可以从注册中心获得服务相关地址，然后通过请求到网络服务端。
+注册中心注册中心就是一个用来储存服务的地址和ip的。可以注册和查找，相当于一个目...
+                        
+                    </div>
+
+                    
+
+<div class="article-meta-info-container border-box home">
+    <div class="article-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Aug 20 2023 13:20:41 GMT+0800">2023-08-20</span>
+            </span>
+        
+
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2023/08/20/%E8%87%AA%E5%B7%B1%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARPC/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+    </ul>
+    
+
+
+
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2023
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Keep Team</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.7.3</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+
+            
+        </div>
+    </div>
 </footer>
 
+        </div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+    <!-- post tools -->
     
 
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+</main>
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
 
 
 
 
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
+
+<div class="post-scripts">
+    
+    
+    
+</div>
+
+
+
+
 </body>
 </html>
