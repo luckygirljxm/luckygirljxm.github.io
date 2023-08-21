@@ -9,7 +9,7 @@
     
     <title>
         
-            开源第一步 |
+            自己如何实现一个RPC |
         
         小梦同学的博客
     </title>
@@ -141,7 +141,7 @@
         <div class="article-content-container border-box">
 
             <div class="article-title">
-                <span class="title-hover-animation">开源第一步</span>
+                <span class="title-hover-animation">自己如何实现一个RPC</span>
             </div>
 
             
@@ -169,13 +169,13 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-07-01 10:47:00</span>
-                <span class="mobile">2023-07-01 10:47</span>
+                <span class="pc">2023-07-01 17:47:00</span>
+                <span class="mobile">2023-07-01 17:47</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc">2023-07-01 10:47:00</span>
+                <span class="pc">2023-07-01 17:47:00</span>
             </span>
         
 
@@ -213,26 +213,37 @@
             <div class="article-content keep-markdown-body">
                 
 
-                <p>开源贡献指南：<br>1、<a class="link" target="_blank" rel="noopener" href="https://opensource.guide/zh-hans">https://opensource.guide/zh-hans<i class="fas fa-external-link-alt"></i></a> ：Github 官方的开源软件指南 。这份文档主要讲了如何启动一个开源项目、项目维护的最佳实践，怎么通过开源工作获得经济报酬等内容。多国语言版本，真挺不错的！<br>2、<a class="link" target="_blank" rel="noopener" href="https://github.com/eryajf/HowToStartOpenSource">GitHub - eryajf&#x2F;HowToStartOpenSource: ⚗️ GitHub开源项…<i class="fas fa-external-link-alt"></i></a>：个人总结，内容飞航实用，涵盖 Github 实用小技巧、Github Actions 实战等内容。在线阅读地址：<a class="link" target="_blank" rel="noopener" href="https://eryajf.github.io/HowToStartOpenSource/">HowToStartOpenSource<i class="fas fa-external-link-alt"></i></a> 。</p>
-<p>另开源项目的实际案例或者经验分享：<br>1、我参与 Seata 开源项目的一些感悟：<a class="link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/wb7Dlq6H1wqwxCwW26d8RA">我参与 Seata 开源项目的一些感悟<i class="fas fa-external-link-alt"></i></a><br>2、我给 Apache 顶级项目提了个 Bug：<a class="link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LYGc-02Acr4trl29R3e_yA">我给Apache顶级项目提了个Bug<i class="fas fa-external-link-alt"></i></a><br>3、我是如何成为Apache Kudu committer &amp; PMC的？：<a class="link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dlh_kbhEWGw0DRK3j5GtNQ">我是如何成为Apache Kudu committer &amp; PMC的？<i class="fas fa-external-link-alt"></i></a><br>4、论如何从0开始参与一个开源项目：<a class="link" target="_blank" rel="noopener" href="https://juejin.cn/post/7152695026517016584">论如何从0开始参与一个开源项目 - 掘金<i class="fas fa-external-link-alt"></i></a><br>5、如何参与开源项目 - 细说 GitHub 上的 PR 全过程：<a class="link" target="_blank" rel="noopener" href="https://www.cnblogs.com/daniel-hutao/p/open-a-pr-in-github.html">如何参与开源项目 - 细说 GitHub 上的 PR 全过程 - 胡说云原生 - 博客园<i class="fas fa-external-link-alt"></i></a><br>最后，开源项目一般都会有一个贡献指南，好好阅读贡献指南对于自己参与项目非常有帮助。参考：Seata 项目的官方贡献指南（ <a class="link" target="_blank" rel="noopener" href="https://github.com/seata/seata/blob/develop/CONTRIBUTING.md">seata&#x2F;CONTRIBUTING.md at develop · seata&#x2F;seata · G…<i class="fas fa-external-link-alt"></i></a> ） 。</p>
-<p>跨出开源第一步：</p>
+                <p>一个合格的RPC框架需要有服务端，消费端，注册中心，负载均衡等服务端Server先向注册中心注册服务，客户端就可以从注册中心获得服务相关地址，然后通过请求到网络服务端。</p>
+<h2 id="注册中心"><a href="#注册中心" class="headerlink" title="注册中心"></a>注册中心</h2><p>注册中心就是一个用来储存服务的地址和ip的。可以注册和查找，相当于一个目录。只要是有存储功能的都可以用来当作服务中心。</p>
+<p>但是我们这里使用的是zookeeper。因为zookeeper提供了高可用，高性能的分布式数据一致性解决方案。通常zookeeper被用来当作消息发布接收，集群管理等，而且，zookeeper的数据是存储在内存里面的，性能非常好。</p>
+<h2 id="网络传输"><a href="#网络传输" class="headerlink" title="网络传输"></a>网络传输</h2><p>如果要调用远程的方法就需要发送网络请求，来传递目标类以及各种参数等。</p>
+<p>使用Netty来进行网络传输，相比于传统的socket（阻塞IO并且性能低），基于非阻塞NIO模型，并且简化了TCP,UDP的嵌套服务器编程并且性能方面也很好</p>
+<h2 id="序列化和反序列化"><a href="#序列化和反序列化" class="headerlink" title="序列化和反序列化"></a>序列化和反序列化</h2><p>为什么需要序列化和反序列化？</p>
+<p>因为网络传输是需要二进制，java对象是不能够进行网络传输的，必须将java对象转换为二进制（序列化）。而我们最后需要的只是java对象，所以还需要将将二进制转换为java对象（反序列化）。</p>
+<h2 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h2><p>为什么需要动态代理？</p>
+<p>为了让RPC调用远程方法像调用本地方法一样简单，不用关注调用远程方法的细节，如网络传输。</p>
+<p>如何屏蔽调用远程方法的底层细节？</p>
+<p>使用动态代理。</p>
+<p>相关文章<a class="link" target="_blank" rel="noopener" href="https://javaguide.cn/java/basis/proxy.html">https://javaguide.cn/java/basis/proxy.html<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>举个例子：我们的系统某个服务访问量特别大，我们将这个服务部署在多态服务器上，当客户端发起请求的时候，多态服务器都可以处理这个请求。那么，如何正确选择处理该请求的服务器就很关键。iaru你要一台服务器来处理该服务响应同一请求，那该服务部署在多态服务器的意义就不复存在了。负载均衡就是为了避免单个服务器响应同一请求，容易造成服务器宕机、崩溃等问题，我们从负载均衡者四个字就能明显感受到它的意义。</p>
+<h2 id="传输协议"><a href="#传输协议" class="headerlink" title="传输协议"></a>传输协议</h2><p>我峨嵋你还需要设计一个私有的RPC协议，这个协议是客户端（服务消费方）和服务端（服务提供仿）交流的基础。</p>
+<p>简单来说：<strong>通过设计协议，我们定义需要传输哪些类型的数据，并且还会规定每一种类型的数据应该占多少字节。这样我们在接收到二进制数据之后，就可以正确的解析出我们需要的数据。</strong></p>
+<p>通常一些标准的RPC协议包含下面这些内容：</p>
 <ul>
-<li>开源方面：<ul>
-<li>从日常开发需求入手，比如平常使用到的第三方库与中间件，去发现其中存在的问题以及可以改善的点，提出Issue</li>
-<li>在提出Issue的过程中，加深对该中间件的理解，尝试着去提出PR</li>
-<li>以日常需求为主做开源，而不是为了开源而开源</li>
-<li>一旦开始做开源，就坚持维护下去，即使只有自己在使用</li>
-<li>尽可能地提升自己在开源社区的影响力，帮助他人解决问题</li>
+<li><strong>魔数</strong>：通常4个字节。这个魔数主要是为了筛选来到服务器的数据包，有了这个魔数之后，服务端首先取出前面四个字节进行比对，能够在第一时间识别出这个数据包并非是遵循自定义协议的，也就是无效数据包，为了安全考虑可以直接关闭连接以节省资源。</li>
+<li><strong>序列化编号</strong>：标识序列化的方式，比如是使用Java自带的序列化，还是json,kryo等序列化方式。</li>
+<li><strong>消息体长度</strong>：运行时计算出来</li>
+<li>…….</li>
 </ul>
-</li>
-<li>学习方面：<ul>
-<li>深入理解框架的底层原理，而不是停留在用的阶段</li>
-<li>深入学习协议的底层</li>
-</ul>
-</li>
-</ul>
-<p>之前一直想要参与开源，但是一直找不到什么好的切入点，希望以后能逐渐学习开源。</p>
-<p>![5e97885325d5c50ba809d2fe7f37d8c0](C:&#x2F;Users&#x2F;哎呦喂&#x2F;Pictures&#x2F;Camera Roll&#x2F;5e97885325d5c50ba809d2fe7f37d8c0.jpeg)</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li><strong>注册中心</strong>：注册中心负责服务地址的注册与查找，相当于目录服务。</li>
+<li><strong>网络传输</strong>：既然我们要调用远程的方法，纪要发送网络请求来传递目标类和方法的信息以及方法的参数数据到服务提供端。</li>
+<li><strong>序列化和发序列话</strong>：要在网络传输数据就要涉及到<strong>序列化</strong>。</li>
+<li><strong>动态代理</strong>：屏蔽远程方法调用底层细节。</li>
+<li><strong>负载均衡</strong>：避免单个服务器响应同一个请求，容易造成服务器宕机，崩溃等问题。</li>
+<li><strong>传输协议</strong>：这个协议是客户端（服务消费方）和服务端（服务提供方）交流的基础。</li>
+</ol>
+<p>更完善的RPC框架可能华友监控模块（Dubbo的监控模块设计）。</p>
 
             </div>
 
@@ -246,13 +257,13 @@
                         <div class="article-prev">
                             <a class="prev"
                                rel="prev"
-                               href="/2023/07/01/%E8%87%AA%E5%B7%B1%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AARPC/"
+                               href="/2023/07/21/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"
                             >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                                 <span class="title flex-center">
-                                <span class="post-nav-title-item text-ellipsis">自己如何实现一个RPC</span>
+                                <span class="post-nav-title-item text-ellipsis">分布式锁</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                             </a>
@@ -262,10 +273,10 @@
                         <div class="article-next">
                             <a class="next"
                                rel="next"
-                               href="/2023/06/07/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+                               href="/2023/07/01/%E5%BC%80%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5/"
                             >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item text-ellipsis">MySQL学习笔记</span>
+                                <span class="post-nav-title-item text-ellipsis">开源第一步</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                                 <span class="right arrow-icon flex-center">
