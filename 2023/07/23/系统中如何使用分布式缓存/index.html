@@ -9,7 +9,7 @@
     
     <title>
         
-            开源第一步 |
+            系统中如何使用分布式缓存 |
         
         小梦同学的博客
     </title>
@@ -141,7 +141,7 @@
         <div class="article-content-container border-box">
 
             <div class="article-title">
-                <span class="title-hover-animation">开源第一步</span>
+                <span class="title-hover-animation">系统中如何使用分布式缓存</span>
             </div>
 
             
@@ -169,13 +169,13 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-07-01 10:47:00</span>
-                <span class="mobile">2023-07-01 10:47</span>
+                <span class="pc">2023-07-23 17:24:20</span>
+                <span class="mobile">2023-07-23 17:24</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc">2023-07-01 10:47:00</span>
+                <span class="pc">2023-07-23 17:24:20</span>
             </span>
         
 
@@ -213,26 +213,53 @@
             <div class="article-content keep-markdown-body">
                 
 
-                <p>开源贡献指南：<br>1、<a class="link" target="_blank" rel="noopener" href="https://opensource.guide/zh-hans">https://opensource.guide/zh-hans<i class="fas fa-external-link-alt"></i></a> ：Github 官方的开源软件指南 。这份文档主要讲了如何启动一个开源项目、项目维护的最佳实践，怎么通过开源工作获得经济报酬等内容。多国语言版本，真挺不错的！<br>2、<a class="link" target="_blank" rel="noopener" href="https://github.com/eryajf/HowToStartOpenSource">GitHub - eryajf&#x2F;HowToStartOpenSource: ⚗️ GitHub开源项…<i class="fas fa-external-link-alt"></i></a>：个人总结，内容飞航实用，涵盖 Github 实用小技巧、Github Actions 实战等内容。在线阅读地址：<a class="link" target="_blank" rel="noopener" href="https://eryajf.github.io/HowToStartOpenSource/">HowToStartOpenSource<i class="fas fa-external-link-alt"></i></a> 。</p>
-<p>另开源项目的实际案例或者经验分享：<br>1、我参与 Seata 开源项目的一些感悟：<a class="link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/wb7Dlq6H1wqwxCwW26d8RA">我参与 Seata 开源项目的一些感悟<i class="fas fa-external-link-alt"></i></a><br>2、我给 Apache 顶级项目提了个 Bug：<a class="link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LYGc-02Acr4trl29R3e_yA">我给Apache顶级项目提了个Bug<i class="fas fa-external-link-alt"></i></a><br>3、我是如何成为Apache Kudu committer &amp; PMC的？：<a class="link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dlh_kbhEWGw0DRK3j5GtNQ">我是如何成为Apache Kudu committer &amp; PMC的？<i class="fas fa-external-link-alt"></i></a><br>4、论如何从0开始参与一个开源项目：<a class="link" target="_blank" rel="noopener" href="https://juejin.cn/post/7152695026517016584">论如何从0开始参与一个开源项目 - 掘金<i class="fas fa-external-link-alt"></i></a><br>5、如何参与开源项目 - 细说 GitHub 上的 PR 全过程：<a class="link" target="_blank" rel="noopener" href="https://www.cnblogs.com/daniel-hutao/p/open-a-pr-in-github.html">如何参与开源项目 - 细说 GitHub 上的 PR 全过程 - 胡说云原生 - 博客园<i class="fas fa-external-link-alt"></i></a><br>最后，开源项目一般都会有一个贡献指南，好好阅读贡献指南对于自己参与项目非常有帮助。参考：Seata 项目的官方贡献指南（ <a class="link" target="_blank" rel="noopener" href="https://github.com/seata/seata/blob/develop/CONTRIBUTING.md">seata&#x2F;CONTRIBUTING.md at develop · seata&#x2F;seata · G…<i class="fas fa-external-link-alt"></i></a> ） 。</p>
-<p>跨出开源第一步：</p>
+                <h1 id="分布式缓存的相关问题，缓存击穿，缓存穿透和缓存雪崩问题了解么？有哪些解决办法？"><a href="#分布式缓存的相关问题，缓存击穿，缓存穿透和缓存雪崩问题了解么？有哪些解决办法？" class="headerlink" title="分布式缓存的相关问题，缓存击穿，缓存穿透和缓存雪崩问题了解么？有哪些解决办法？"></a>分布式缓存的相关问题，缓存击穿，缓存穿透和缓存雪崩问题了解么？有哪些解决办法？</h1><h2 id="缓存雪崩："><a href="#缓存雪崩：" class="headerlink" title="缓存雪崩："></a>缓存雪崩：</h2><p>在设置缓存时设置超时时间，因为现阶段的分布式缓存解方案都很难做到缓存与数据库的一致性，也就是说操作分布式缓存跟操作数据库很难保证原子性，所以需要设置一个超时时间，进行兜底去避免缓存跟数据库里面数据长期不一致。比如很多的电商系统在第一次部署的时候需要做缓存数据的预热，把大量的key超时时间设置为相同的时间，如果这个时候恰好到某个时间点就会出现大量的数据同时过期，大量的请求到达数据库，数据库有可能就挂了。</p>
+<h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><p>如果失效的时间是同一个时间点的话，可以把时间做一个离散处理，落在代码中就可以设置一个固定的时间，在这个时间的基础上加上一个随机数，可以保证过期的时间尽量分散在不同时间范围之内。</p>
+<h1 id="缓存穿透："><a href="#缓存穿透：" class="headerlink" title="缓存穿透："></a>缓存穿透：</h1><p>数据在缓存和数据库上面是不存在的，会导致请求直接打到数据库，导致数据库压力非常大。</p>
+<h3 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h3><ol>
+<li>将不存在的数据缓存为null，但是也存在弊端，大量的null，会把内存空间撑爆</li>
+<li>可以使用布隆过滤器，但是也有比较大的问题，因为布隆过滤器是一个简单的单向hash，没有办法删除数据，而且有可能其他key也占用同样的一个Hash位，如果在写入和删除过程中，如果发生一次部署上线，就有可能导致数据库和布隆过滤器数据不一致，并且布隆过滤器和数据库的原子性是很难保证的。</li>
+</ol>
+<h2 id="缓存击穿："><a href="#缓存击穿：" class="headerlink" title="缓存击穿："></a>缓存击穿：</h2><p>缓存击穿也被称为热点key问题，出现在 某一个热key的场景，key失效之后，大量的请求都会去请求数据库，所以导致数据库的压力特别大。</p>
+<h3 id="解决：-1"><a href="#解决：-1" class="headerlink" title="解决："></a>解决：</h3><p>采用分布式锁。当缓存失效之后，所有请求去抢占一个分布式锁，强&#x3D;抢成功了才能去请求数据库，能保证在同一时间只有一个请求到达数据库。对于没有抢到锁的请求也有两种策略，</p>
+<p>第一种，拿不到锁就阻塞等待，资源释放之后再去取缓存。但是一般不会这么做，因为可能导致大量请求挤压</p>
+<p>第二种，没拿到锁的就返回一个默认值，而不是让他阻塞在这里。如果得到默认值呢？可以在存储缓存的时候用一个字段去记录逻辑过期时间，这样每次查询这个环节之后，再去判断时间是否逻辑过期，如果过期抢分布式锁，去更新缓存，没抢到锁的就直接返回这个逻辑过期的数据。</p>
+<h1 id="拓展：常见的几种缓存更新策略"><a href="#拓展：常见的几种缓存更新策略" class="headerlink" title="拓展：常见的几种缓存更新策略"></a>拓展：常见的几种缓存更新策略</h1><h2 id="旁路缓存："><a href="#旁路缓存：" class="headerlink" title="旁路缓存："></a><strong>旁路缓存</strong>：</h2><p>先更新数据库，在删除缓存。</p>
+<p><strong>为什么是删除缓存，而不是更新缓存？</strong></p>
+<ol>
+<li>如果频繁修改数据库，缓存频繁更新，会有多次无效更新，因为缓存都没有被访问。</li>
+<li>并发情况下，如果先更新缓存，那么产生数据不一致的可能性更大。</li>
+</ol>
+<p><strong>为什么不能先删除缓存，在更新数据库？</strong></p>
+<p>会导致数据不一致的问题。</p>
+<p>如果请求1先把缓存删除，再去更新数据库</p>
+<p>这个时候，请求2去读数据库的数据</p>
+<p>请求1数据库更新完成</p>
+<p>这个时候请求2读取到的就是旧值。</p>
+<p><strong>那先更新数据库在删除缓存就没有问题了吗？</strong></p>
+<p>会有问题，比如：</p>
+<ol>
+<li>请求1从db读数据A</li>
+<li>请求2更新db中的数据A(此时缓存中无数据A，所以不用执行删除缓存操作)</li>
+<li>请求1将数据A写入cache</li>
+</ol>
+<p>理论上来说，还是会有数据不一致的问题，但是概率非常小，因为缓存写入的速度会比数据库写入的速度快很多。</p>
+<p>旁路缓存存在的劣势：热点key:解决办法一个是1.互斥锁，2.逻辑过期</p>
+<img src="/2023/07/23/%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/image-1692782945729.png" class>
+
+<p><strong>除了旁路缓存模式，还有什么模式？</strong></p>
+<h2 id="读写穿透："><a href="#读写穿透：" class="headerlink" title="读写穿透："></a><strong>读写穿透：</strong></h2><p>把缓存作为主要数据存储，缓存负责将数据读取和写入数据库。</p>
+<p><strong>写</strong>：</p>
 <ul>
-<li>开源方面：<ul>
-<li>从日常开发需求入手，比如平常使用到的第三方库与中间件，去发现其中存在的问题以及可以改善的点，提出Issue</li>
-<li>在提出Issue的过程中，加深对该中间件的理解，尝试着去提出PR</li>
-<li>以日常需求为主做开源，而不是为了开源而开源</li>
-<li>一旦开始做开源，就坚持维护下去，即使只有自己在使用</li>
-<li>尽可能地提升自己在开源社区的影响力，帮助他人解决问题</li>
+<li>先查缓存,缓存不存在，直接更新数据库</li>
+<li>缓存中存在，则先更新缓存，如何缓存服务自己更新数据库</li>
 </ul>
-</li>
-<li>学习方面：<ul>
-<li>深入理解框架的底层原理，而不是停留在用的阶段</li>
-<li>深入学习协议的底层</li>
+<p><strong>读</strong>：</p>
+<ul>
+<li>从缓存中读取数据，读取到后就直接返回</li>
+<li>读取不到的话，先从数据库加载，写入到缓存后返回响应。</li>
 </ul>
-</li>
-</ul>
-<p>之前一直想要参与开源，但是一直找不到什么好的切入点，希望以后能逐渐学习开源。</p>
-<p>![5e97885325d5c50ba809d2fe7f37d8c0](C:&#x2F;Users&#x2F;哎呦喂&#x2F;Pictures&#x2F;Camera Roll&#x2F;5e97885325d5c50ba809d2fe7f37d8c0.jpeg)</p>
+<h2 id="异步缓存写入："><a href="#异步缓存写入：" class="headerlink" title="异步缓存写入："></a>异步缓存写入：</h2><p>缓存负责数据的读写，但是更新缓存之后批量更新数据库。</p>
 
             </div>
 
@@ -243,29 +270,14 @@
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                               rel="prev"
-                               href="/2023/07/01/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"
-                            >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                                <span class="title flex-center">
-                                <span class="post-nav-title-item text-ellipsis">分布式锁</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                                rel="next"
-                               href="/2023/06/07/MySQl%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+                               href="/2023/07/03/ThreadLocal%E8%AF%A6%E8%A7%A3/"
                             >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item text-ellipsis">MySQL学习笔记</span>
+                                <span class="post-nav-title-item text-ellipsis">ThreadLocal详解</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                                 <span class="right arrow-icon flex-center">
