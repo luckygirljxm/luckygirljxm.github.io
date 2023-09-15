@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="小梦同学的博客">
+    <meta name="author" content="小梦同学">
+    
+    <title>
+        
+            算法模板&amp;&amp;题解 |
+        
+        小梦同学的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"}
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"style":{"primary_color":"#0066cc","logo":"/images/logo.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","first_screen":{"enable":false,"header_transparent":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"scroll":{"progress_bar":false,"percent":false}},"local_search":{"enable":false,"preload":false},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"version":"3.7.3"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container border-box">
+
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               小梦同学的博客
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+
+                
+
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+
+        <div class="article-content-container border-box">
+
+            <div class="article-title">
+                <span class="title-hover-animation">算法模板&amp;&amp;题解</span>
+            </div>
+
+            
+                <div class="article-header border-box">
+                    
+                        <div class="avatar-box border-box">
+                            <img src="/images/avatar.svg">
+                        </div>
+                    
+                    <div class="info-box">
+                        <div class="author">
+                            <span class="name">小梦同学</span>
+                            
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info border-box">
+                            
+
+<div class="article-meta-info-container border-box post">
+    <div class="article-meta-info border-box">
+        
+
+
+        
+            <span class="meta-info-item article-create-date">
+                <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
+                <span class="pc">2023-09-15 17:09:23</span>
+                <span class="mobile">2023-09-15 17:09</span>
+            </span>
+
+            <span class="meta-info-item article-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="pc">2023-09-15 17:09:23</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="article-tag meta-info-item border-box">
+                <i class="icon fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id="二分法"><a href="#二分法" class="headerlink" title="二分法"></a>二分法</h1><p>二分查找又称<code>折半搜索算法</code>。 狭义地来讲，二分查找是一种在有序数组查找某一特定元 素的搜索算法。这同时也是大多数人所知道的一种说法。实际上， 广义的二分查找是将问 题的规模缩小到原有的一半。类似的，三分法就是将问题规模缩小为原来的 1&#x2F;3。</p>
+<p>本文给大家带来的内容则是<code>狭义地二分查找</code></p>
+<blockquote>
+<p>尽管二分查找的基本思想相对简单，但细节可以令人难以招架 … — 高德纳</p>
+</blockquote>
+<p>当乔恩·本特利将二分搜索问题布置给专业编程课的学生时，百分之 90 的学生在花费数小 时后还是无法给出正确的解答，主要因为这些错误程序在面对边界值的时候无法运行，或返 回错误结果。1988 年开展的一项研究显示，20 本教科书里只有 5 本正确实现了二分搜索 。不仅如此，本特利自己 1986 年出版的《编程珠玑》一书中的二分搜索算法存在整数溢出 的问题，二十多年来无人发现。Java 语言的库所实现的二分搜索算法中同样的溢出问题存 在了九年多才被修复。</p>
+<p>可见二分查找并不简单， 本文就试图带你走近 ta，明白 ta 的底层逻辑，并提供模板帮助 大家写书 bug free 的二分查找代码。</p>
+<p>可以看完讲义结合 <a class="link" target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/binary-search">LeetCode Book 二分查找练习一下<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="问题定义"><a href="#问题定义" class="headerlink" title="问题定义"></a>问题定义</h2><p>给定一个由数字组成的有序数组 nums，并给你一个数字 target。问 nums 中是否存在 target。如果存在， 则返回其在 nums 中的索引。如果不存在，则返回 - 1。</p>
+<p>这是二分查找中最简单的一种形式。当然二分查找也有很多的变形，这也是二分查找容易出 错，难以掌握的原因。</p>
+<p>常见变体有：</p>
+<ul>
+<li>如果存在多个满足条件的元素，返回最左边满足条件的索引。</li>
+<li>如果存在多个满足条件的元素，返回最右边满足条件的索引。</li>
+<li>数组不是整体有序的。 比如先升序再降序，或者先降序再升序。</li>
+<li>将一维数组变成二维数组。</li>
+<li>。。。</li>
+</ul>
+<p>接下来，我们逐个进行查看。</p>
+<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><ul>
+<li>数组是有序的（如果无序，我们也可以考虑排序，不过要注意排序的复杂度）</li>
+</ul>
+<h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p>二分查找中使用的术语：</p>
+<ul>
+<li>target —— 要查找的值</li>
+<li>index —— 当前位置</li>
+<li>l 和 r —— 左右指针</li>
+<li>mid —— 左右指针的中点，用来确定我们应该向左查找还是向右查找的索引</li>
+</ul>
+<h2 id="常见题型"><a href="#常见题型" class="headerlink" title="常见题型"></a>常见题型</h2><h3 id="查找一个数"><a href="#查找一个数" class="headerlink" title="查找一个数"></a>查找一个数</h3><p>算法描述：</p>
+<ul>
+<li>先从数组的中间元素开始，如果中间元素正好是要查找的元素，则搜索过程结束；</li>
+<li>如果目标元素大于中间元素，则在数组大于中间元素的那一半中查找，而且跟开始一样从 中间元素开始比较。</li>
+<li>如果目标元素小于中间元素，则在数组小于中间元素的那一半中查找，而且跟开始一样从 中间元素开始比较。</li>
+<li>如果在某一步骤数组为空，则代表找不到。</li>
+</ul>
+<p><strong>复杂度分析</strong></p>
+<ul>
+<li>平均时间复杂度： $O(logN)$</li>
+<li>最坏时间复杂度： $O(logN)$</li>
+<li>最优时间复杂度： $O(1)$</li>
+<li>空间复杂度<ul>
+<li>迭代: $O(1)$</li>
+<li>递归： $O(logN)$（无尾调用消除）</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>后面的复杂度也是类似的，不再赘述。</p>
+</blockquote>
+<p>这种搜索算法每一次比较都使搜索范围缩小一半，是典型的二分查找。</p>
+<p>这个是二分查找中最简答的一种类型了，我们先来搞定它。 我们来一个具体的例子， 这样 方便大家增加代入感。假设 nums 为 <code>[1,3,4,6,7,8,10,13,14]</code>， target 为 4·。</p>
+<ul>
+<li><p>刚开始数组中间的元素为 7</p>
+</li>
+<li><p>7 &gt; 4 ，由于 7 右边的数字都大于 7 ，因此不可能是答案。我们将范围缩写到了 7 的 左侧。</p>
+<p>此时中间元素为 3</p>
+</li>
+<li><p>3 &lt; 4，由于 3 左边的数字都小于 3 ，因此不可能是答案。我们将范围缩写到了 3 的右 侧。</p>
+</li>
+<li><p>此时中间元素为 4，正好是我们要找的，返回其索引 2 即可。</p>
+</li>
+</ul>
+<p>如何将上面的算法转换为容易理解的可执行代码呢？就算是这样一个简简单单，朴实无华的 二分查找， 不同的人写出来的差别也是很大的。 如果没有一个思维框架指导你，那么你在 不同的时间可能会写出差异很大的代码。这样的话，你犯错的几率会大大增加。</p>
+<p>这里给大家介绍一个我经常使用的思维框架和代码模板。</p>
+<h4 id="思维框架"><a href="#思维框架" class="headerlink" title="思维框架"></a>思维框架</h4><p>** 首先定义搜索区间为 [left, right]，注意是左右都闭合，之后会用到这个点 **</p>
+<blockquote>
+<p>你可以定义别的搜索区间形式，不过后面的代码也相应要调整，感兴趣的可以试试别的搜 索区间。</p>
+</blockquote>
+<ul>
+<li>由于定义的搜索区间为 [left, right]，因此当 left &lt;&#x3D; right 的时候，搜索区间都不 为空，此时我们都需要继续搜索。 也就是说终止搜索条件应该为 left &lt;&#x3D; right。</li>
+</ul>
+<blockquote>
+<p>举个例子容易明白一点。 比如对于区间 [4,4]，其包含了一个元素 4，因此搜索区间不 为空，需要继续搜索（试想 4 恰好是我们要找的 target，如果不继续搜索， 会错过正 确答案）。而当搜索区间为 [left, right) 的时候，同样对于 [4,4]，这个时候搜索区 间却是空的，因为这样的一个区间不存在任何数字·。</p>
+</blockquote>
+<ul>
+<li>循环体内，我们不断计算 mid ，并将 nums[mid] 与 目标值比对。<ul>
+<li>如果 nums[mid] 等于目标值， 则提前返回 mid（只需要找到一个满足条件的即可）</li>
+<li>如果 nums[mid] 小于目标值， 说明目标值在 mid 右侧，这个时候搜索区间可缩小为 [mid + 1, right] （mid 以及 mid 左侧的数字被我们排除在外）</li>
+<li>如果 nums[mid] 大于目标值， 说明目标值在 mid 左侧，这个时候搜索区间可缩小为 [left, mid - 1] （mid 以及 mid 右侧的数字被我们排除在外）</li>
+</ul>
+</li>
+<li>循环结束都没有找到，则说明找不到，返回 -1 表示未找到。</li>
+</ul>
+<h4 id="代码模板"><a href="#代码模板" class="headerlink" title="代码模板"></a>代码模板</h4><p><strong>Java</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public int binarySearch(int[] nums, int target) &#123;</span><br><span class="line">    // 左右都闭合的区间 [l, r]</span><br><span class="line">    int left = 0;</span><br><span class="line">    int right = nums.length - 1;</span><br><span class="line"></span><br><span class="line">    while(left &lt;= right) &#123;</span><br><span class="line">        int mid = left + (right - left) / 2;</span><br><span class="line">        if(nums[mid] == target)</span><br><span class="line">            return mid;</span><br><span class="line">        if (nums[mid] &lt; target)</span><br><span class="line">			      // 搜索区间变为 [mid+1, right]</span><br><span class="line">            left = mid + 1;</span><br><span class="line">        if (nums[mid] &gt; target)</span><br><span class="line">            // 搜索区间变为 [left, mid - 1]</span><br><span class="line">            right = mid - 1;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="寻找最左边的满足条件的值"><a href="#寻找最左边的满足条件的值" class="headerlink" title="寻找最左边的满足条件的值"></a>寻找最左边的满足条件的值</h3><p>和<code>查找一个数</code>类似， 我们仍然套用<code>查找一个数</code>的思维框架和代码模板。</p>
+<h4 id="思维框架-1"><a href="#思维框架-1" class="headerlink" title="思维框架"></a>思维框架</h4><ul>
+<li>首先定义搜索区间为 [left, right]，注意是左右都闭合，之后会用到这个点。</li>
+<li>终止搜索条件为 left &lt;&#x3D; right。</li>
+<li>循环体内，我们不断计算 mid ，并将 nums[mid] 与 目标值比对。<ul>
+<li>如果 nums[mid] 等于目标值， 则收缩右边界，我们找到了一个备胎，继续看看左边还 有没有了（<strong>注意这里不一样</strong>）</li>
+<li>如果 nums[mid] 小于目标值， 说明目标值在 mid 右侧，这个时候搜索区间可缩小为 [mid + 1, right]</li>
+<li>如果 nums[mid] 大于目标值， 说明目标值在 mid 左侧，这个时候搜索区间可缩小为 [left, mid - 1]</li>
+</ul>
+</li>
+<li>由于不会提前返回，因此我们需要检查最终的 left，看 nums[left]是否等于 target。<ul>
+<li>如果不等于 target，或者 left 出了右边边界了，说明至死都没有找到一个备胎，则 返回 -1.</li>
+<li>否则返回 left 即可，备胎转正。</li>
+</ul>
+</li>
+</ul>
+<h4 id="代码模板-1"><a href="#代码模板-1" class="headerlink" title="代码模板"></a>代码模板</h4><blockquote>
+<p>实际上 nums[mid] &gt; target 和 nums[mid] &#x3D;&#x3D; target 是可以合并的。我这里为了清晰 ，就没有合并，大家熟悉之后合并起来即可。</p>
+</blockquote>
+<p><strong>Java</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">public int binarySearchLeft(int[] nums, int target) &#123;</span><br><span class="line">	// 搜索区间为 [left, right]</span><br><span class="line">    int left = 0;</span><br><span class="line">    int right = nums.length - 1;</span><br><span class="line">    while (left &lt;= right) &#123;</span><br><span class="line">        int mid = left + (right - left) / 2;</span><br><span class="line">        if (nums[mid] &lt; target) &#123;</span><br><span class="line">            // 搜索区间变为 [mid+1, right]</span><br><span class="line">            left = mid + 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (nums[mid] &gt; target) &#123;</span><br><span class="line">            // 搜索区间变为 [left, mid-1]</span><br><span class="line">            right = mid - 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (nums[mid] == target) &#123;</span><br><span class="line">            // 收缩右边界</span><br><span class="line">            right = mid - 1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // 检查是否越界</span><br><span class="line">    if (left &gt;= nums.length || nums[left] != target)</span><br><span class="line">        return -1;</span><br><span class="line">    return left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="寻找最右边的满足条件的值"><a href="#寻找最右边的满足条件的值" class="headerlink" title="寻找最右边的满足条件的值"></a>寻找最右边的满足条件的值</h3><p>和<code>查找一个数</code>类似， 我们仍然套用<code>查找一个数</code>的思维框架和代码模板。</p>
+<blockquote>
+<p>有没有感受到框架和模板的力量？</p>
+</blockquote>
+<h4 id="思维框架-2"><a href="#思维框架-2" class="headerlink" title="思维框架"></a>思维框架</h4><ul>
+<li>首先定义搜索区间为 [left, right]，注意是左右都闭合，之后会用到这个点。</li>
+</ul>
+<blockquote>
+<p>你可以定义别的搜索区间形式，不过后面的代码也相应要调整，感兴趣的可以试试别的搜 索区间。</p>
+</blockquote>
+<ul>
+<li>由于我们定义的搜索区间为 [left, right]，因此当 left &lt;&#x3D; right 的时候，搜索区间 都不为空。 也就是说我们的终止搜索条件为 left &lt;&#x3D; right。</li>
+</ul>
+<blockquote>
+<p>举个例子容易明白一点。 比如对于区间 [4,4]，其包含了一个元素 4，因此搜索区间不 为空。而当搜索区间为 [left, right) 的时候，同样对于 [4,4]，这个时候搜索区间却 是空的。</p>
+</blockquote>
+<ul>
+<li>循环体内，我们不断计算 mid ，并将 nums[mid] 与 目标值比对。<ul>
+<li>如果 nums[mid] 等于目标值， 则收缩左边界，我们找到了一个备胎，继续看看右边还 有没有了</li>
+<li>如果 nums[mid] 小于目标值， 说明目标值在 mid 右侧，这个时候搜索区间可缩小为 [mid + 1, right]</li>
+<li>如果 nums[mid] 大于目标值， 说明目标值在 mid 左侧，这个时候搜索区间可缩小为 [left, mid - 1]</li>
+</ul>
+</li>
+<li>由于不会提前返回，因此我们需要检查最终的 right，看 nums[right]是否等于 target。<ul>
+<li>如果不等于 target，或者 right 出了左边边界了，说明至死都没有找到一个备胎，则 返回 -1.</li>
+<li>否则返回 right 即可，备胎转正。</li>
+</ul>
+</li>
+</ul>
+<h4 id="代码模板-2"><a href="#代码模板-2" class="headerlink" title="代码模板"></a>代码模板</h4><blockquote>
+<p>实际上 nums[mid] &lt; target 和 nums[mid] &#x3D;&#x3D; target 是可以合并的。我这里为了清晰 ，就没有合并，大家熟悉之后合并起来即可。</p>
+</blockquote>
+<p><strong>Java</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">public int binarySearchRight(int[] nums, int target) &#123;</span><br><span class="line">	// 搜索区间为 [left, right]</span><br><span class="line">    int left = 0</span><br><span class="line">    int right = nums.length - 1;</span><br><span class="line">    while (left &lt;= right) &#123;</span><br><span class="line">        int mid = left + (right - left) / 2;</span><br><span class="line">        if (nums[mid] &lt; target) &#123;</span><br><span class="line">			// 搜索区间变为 [mid+1, right]</span><br><span class="line">            left = mid + 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (nums[mid] &gt; target) &#123;</span><br><span class="line">			// 搜索区间变为 [left, mid-1]</span><br><span class="line">            right = mid - 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (nums[mid] == target) &#123;</span><br><span class="line">            // 收缩左边界</span><br><span class="line">            left = mid + 1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // 检查是否越界</span><br><span class="line">    if (right &lt; 0 || nums[right] != target)</span><br><span class="line">        return -1;</span><br><span class="line">    return right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h1><h2 id="什么是双指针"><a href="#什么是双指针" class="headerlink" title="什么是双指针"></a>什么是双指针</h2><p>顾名思议，双指针就是<strong>两个指针</strong>，但是不同于 C，C++中的指针， 其是一种<strong>算法思想</strong>。</p>
+<p>如果说，我们迭代一个数组，并输出数组每一项，我们需要一个指针来记录当前遍历的项，这个过程我们叫单指针（index）的话。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(int i = 0;i &lt; nums.size(); i++) &#123;</span><br><span class="line">  输出(nums[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>那么双指针实际上就是有两个这样的指针，最为经典的就是二分法中的左右双指针啦。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">int l = 0;</span><br><span class="line">int r = nums.size() - 1;</span><br><span class="line"></span><br><span class="line">while (l &lt; r) &#123;</span><br><span class="line">    if(一定条件) return 合适的值，一般是 l 和 r 的中点</span><br><span class="line">    if(一定条件) l++</span><br><span class="line">    if(一定条件) r--</span><br><span class="line">&#125;</span><br><span class="line">// 因为 l == r，因此返回 l 和 r 都是一样的</span><br><span class="line">return l</span><br></pre></td></tr></table></figure>
+
+<p>读到这里，你发现双指针是一个很宽泛的概念，就好像数组，链表一样，其类型会有很多很多， 比如二分法经常用到<code>左右端点双指针</code>。滑动窗口会用到<code>快慢指针和固定间距指针</code>。 因此双指针其实是一种综合性很强的类型，类似于数组，栈等。 但是我们这里所讲述的双指针，往往指的是某几种类型的双指针，而不是“只要有两个指针就是双指针了”。</p>
+<h2 id="常见题型有哪些？"><a href="#常见题型有哪些？" class="headerlink" title="常见题型有哪些？"></a>常见题型有哪些？</h2><p>这里我将其分为三种类类型，分别是：</p>
+<ol>
+<li>1.快慢指针（两个指针步长不同）</li>
+<li>2.左右端点指针（两个指针分别指向头尾，并往中间移动，步长不确定）</li>
+<li>3.固定间距指针（两个指针间距相同，步长相同）</li>
+</ol>
+<blockquote>
+<p>上面是我自己的分类，没有参考别人。可以发现我的分类标准已经覆盖了几乎所有常见的情况。 大家在平时做题的时候一定要养成这样的习惯，将题目类型进行总结，当然这个总结可以是别人总结好的，也可以是自己独立总结的。不管是哪一种，都要进行一定的消化吸收，把它们变成真正属于自己的知识。</p>
+</blockquote>
+<p>不管是哪一种双指针，只考虑双指针部分的话 ，由于最多还是会遍历整个数组一次，因此时间复杂度取决于步长，如果步长是 1，2 这种常数的话，那么时间复杂度就是 O(N)，如果步长是和数据规模有关（比如二分法），其时间复杂度就是 O(logN)。并且由于不管规模多大，我们都只需要最多两个指针，因此空间复杂度是 O(1)。下面我们就来看看双指针的常见套路有哪些。</p>
+<h2 id="常见套路"><a href="#常见套路" class="headerlink" title="常见套路"></a>常见套路</h2><h3 id="快慢指针"><a href="#快慢指针" class="headerlink" title="快慢指针"></a>快慢指针</h3><ol>
+<li>1.判断链表是否有环</li>
+</ol>
+<p>这里给大家推荐两个非常经典的题目，一个是力扣 287 题，一个是 142 题。其中 142 题我在我的 LeetCode 题解仓库中的每日一题板块出过，并且给了很详细的证明和解答。而 287 题相对不直观，比较难以想到，这道题曾被官方选定为每日一题，也是相当经典的。</p>
+<ul>
+<li><a class="link" target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-the-duplicate-number/">287. 寻找重复数<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://github.com/azl397985856/leetcode/issues/274">【每日一题】- 2020-01-14 - 142. 环形链表 II · Issue #274 · azl397985856&#x2F;leetcode<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<ol>
+<li><ol>
+<li></li>
+</ol>
+<p>读写指针。典型的是<code>删除重复元素</code></p>
+</li>
+</ol>
+<p>这里推荐我仓库中的一道题， 我这里写了一个题解，横向对比了几个相似题目，并剖析了这种题目的本质是什么，让你看透题目本质，推荐阅读。</p>
+<ul>
+<li><a href>80.删除排序数组中的重复项 II</a></li>
+</ul>
+<h2 id="左右端点指针"><a href="#左右端点指针" class="headerlink" title="左右端点指针"></a>左右端点指针</h2><ol>
+<li>1.二分查找。</li>
+</ol>
+<p>二分查找会在专题篇展开，这里不多说，大家先知道就行了。</p>
+<ol>
+<li>1.暴力枚举中“从大到小枚举”（剪枝）</li>
+</ol>
+<p>一个典型的题目是我之前参加官方每日一题的时候给的一个解法，大家可以看下。这种解法是可以 AC 的。同样地，这道题我也给出了三种方法，帮助大家从多个纬度看清这个题目。强烈推荐大家做到一题多解。这对于你做题很多帮助。除了一题多解，还有一个大招是多题同解，这部分我们放在专题篇介绍。<a class="link" target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solution/qian-zhui-he-zhuang-tai-ya-suo-pythonjava-by-fe-lu/">https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/solution/qian-zhui-he-zhuang-tai-ya-suo-pythonjava-by-fe-lu/<i class="fas fa-external-link-alt"></i></a>)</p>
+<ol>
+<li>1.有序数组。</li>
+</ol>
+<p>区别于上面的二分查找，这种算法指针移动是连续的，而不是跳跃性的，典型的是 LeetCode 的<code>两数和</code>，以及<code>N数和</code>系列问题。</p>
+<h2 id="固定间距指针"><a href="#固定间距指针" class="headerlink" title="固定间距指针"></a>固定间距指针</h2><ol>
+<li>1.一次遍历（One Pass）求链表的中点</li>
+<li>2.一次遍历（One Pass）求链表的倒数第 k 个元素</li>
+<li>3.固定窗口大小的滑动窗口</li>
+</ol>
+<h2 id="模板-伪代码"><a href="#模板-伪代码" class="headerlink" title="模板(伪代码)"></a>模板(伪代码)</h2><p>我们来看下上面三种题目的算法框架是什么样的。这个时候我们没必要纠结具体的语言，这里我直接使用了伪代码，就是防止你掉进细节。</p>
+<p>当你掌握了这种算法的细节，就应该找几个题目试试。一方面是检测自己是否真的掌握了，另一方面是“细节”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">l = 0</span><br><span class="line">r = 0</span><br><span class="line">while 没有遍历完</span><br><span class="line">  if 一定条件</span><br><span class="line">    l += 1</span><br><span class="line">  r += 1</span><br><span class="line">return 合适的值</span><br></pre></td></tr></table></figure>
+
+<p>左右端点指针</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">l = 0</span><br><span class="line">r = n - 1</span><br><span class="line">while l &lt; r</span><br><span class="line">  if 找到了</span><br><span class="line">    return 找到的值</span><br><span class="line">  if 一定条件1</span><br><span class="line">    l += 1</span><br><span class="line">  else if  一定条件2</span><br><span class="line">    r -= 1</span><br><span class="line">return 没找到</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>固定间距指针</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">l = 0</span><br><span class="line">r = k</span><br><span class="line">while 没有遍历完</span><br><span class="line">  自定义逻辑</span><br><span class="line">  l += 1</span><br><span class="line">  r += 1</span><br><span class="line">return 合适的值</span><br></pre></td></tr></table></figure>
+
+
+            </div>
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/07/23/%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item text-ellipsis">系统中如何使用分布式缓存</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+                
+
+
+
+
+
+
+            
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2023
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">小梦同学</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.7.3</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+        
+    
+    
+    
+</div>
+
+
+
+
+</body>
+</html>
